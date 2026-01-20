@@ -1,0 +1,177 @@
+.container {
+  margin-bottom: 24px;
+}
+
+.folderList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.folderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.folderItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.folderItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #D0D0D0;
+}
+
+.folderItem.active {
+  border-color: #999;
+  background: #F5F5F5;
+  font-weight: 600;
+}
+
+.folderDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.deleteButton {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #FFB3BA;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.deleteButton:hover {
+  background: #FF9BA3;
+  transform: scale(1.1);
+}
+
+.addFolderButton {
+  padding: 8px 16px;
+  border: 2px dashed #D0D0D0;
+  border-radius: 20px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.addFolderButton:hover {
+  border-color: #999;
+  color: #333;
+  background: #F9F9F9;
+}
+
+.addForm {
+  padding: 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  background: white;
+}
+
+.folderInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.folderInput:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.colorPicker {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.colorOption {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.colorOption:hover {
+  transform: scale(1.1);
+}
+
+.colorOption.selected {
+  border-color: #333;
+  transform: scale(1.15);
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+}
+
+.addButton,
+.cancelButton {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.addButton {
+  background: #BAE1FF;
+  color: #333;
+}
+
+.addButton:hover {
+  background: #A8D5FF;
+}
+
+.cancelButton {
+  background: #F0F0F0;
+  color: #666;
+}
+
+.cancelButton:hover {
+  background: #E0E0E0;
+}
+
+@media (max-width: 768px) {
+  .folderList {
+    gap: 6px;
+  }
+
+  .folderItem {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

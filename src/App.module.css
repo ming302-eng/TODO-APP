@@ -1,0 +1,77 @@
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+}
+
+.mainContent {
+  margin-top: 24px;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.addButton {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background: #BAE1FF;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(186, 225, 255, 0.3);
+}
+
+.addButton:hover {
+  background: #A8D5FF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(186, 225, 255, 0.4);
+}
+
+.addButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+
+  .headerSection {
+    gap: 12px;
+  }
+
+  .addButton {
+    align-self: stretch;
+    padding: 14px 24px;
+  }
+}
